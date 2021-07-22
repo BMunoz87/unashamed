@@ -5,11 +5,11 @@ var Home = function () {
     <div>
       <nav className="nav-wrapper indigo">
         <div className="container">
-          <a href="#" className="brand-logo">
+          <a href="/" className="brand-logo">
             <img src="./images/handshake.png" width="41px" height="41px" />
             Unashamed
           </a>
-          <a href="#" className="sidenav-trigger" data-target="mobile-links">
+          <a href="./" className="sidenav-trigger" data-target="mobile-links">
             <i className="material-icons">menu</i>
           </a>
           <ul className="right hide-on-med-and-down">
@@ -25,24 +25,12 @@ var Home = function () {
           </ul>
         </div>
       </nav>
-      <ul className="sidenav" id="mobile-links">
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#">Resources</a>
-        </li>
-        <li>
-          <a href="#">Login</a>
-        </li>
-      </ul>
+
       <center>
-        <img src="./images/blog1.png" width="50%" height="50%" />
+        <h1>
+          <img src="./images/unashamed.png"></img>
+        </h1>
       </center>
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-      />
       <footer className="page-footer indigo">
         <div className="container">
           <div className="row">
@@ -50,7 +38,6 @@ var Home = function () {
               <h5 className="white-text">
                 When it comes to your mental health
               </h5>
-              <h5></h5>
               <h5>Never be afraid</h5>
               <h5>Remain Unashamed</h5>
               <p className="grey-text text-lighten-4" />
@@ -102,6 +89,15 @@ var Home = function () {
                     Stop Violence Against Women
                   </a>
                 </li>
+                <li>
+                  <a
+                    className="grey-text text-lighten-3"
+                    href="https://www.tethr.men/"
+                    target="_blank"
+                  >
+                    Community Support for Men
+                  </a>
+                </li>
                 <lil>
                   <a
                     className="grey-text text-lighten-3"
@@ -122,6 +118,11 @@ var Home = function () {
           </div>
         </div>
       </footer>
+      {/*end footer */}
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+      />
     </div>
   );
 };
