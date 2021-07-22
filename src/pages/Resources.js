@@ -1,39 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
+import "../App.css";
 
-var Resources = React.createClass({
-  render: function () {
-    return (
-      <div>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-        <link rel="stylesheet" href="../components/main.css" />
-        <title>Unashamed</title>
-        {/* begin nav bar with logo links and login option*/}
-        <nav className="nav-wrapper indigo">
-          <div className="container">
-            <a href="./index" className="brand-logo">
-              <img src="./images/handshake.png" width="41px" height="41px" />
-              Unashamed
-            </a>
-            <a href="./index" className="sidenav-trigger" data-target="mobile-links">
-              <i className="material-icons">menu</i>
-            </a>
-            <ul className="right hide-on-med-and-down">
-              <li>
-                <a href="./index">Home</a>
-              </li>
-              <li>
-                <a href="./resources">Resources</a>
-              </li>
-              <li>
-                <a href="./login">Login</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-        {/* end nav*/}
-
+var Resources = function () {
+  return (
+    <div>
+      <nav className="nav-wrapper indigo">
+        <div className="container">
+          <a href="#" className="brand-logo">
+            <img src="./images/handshake.png" width="41px" height="41px" />
+            Unashamed
+          </a>
+          <a href="#" className="sidenav-trigger" data-target="mobile-links">
+            <i className="material-icons">menu</i>
+          </a>
+          <ul className="right hide-on-med-and-down">
+            <li>
+              <a href="./">Home</a>
+            </li>
+            <li>
+              <a href="./resources">Resources</a>
+            </li>
+            <li>
+              <a href="./login">Login</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
         {/* begin card with resources information*/}
         <div className="row">
           <div className="col s12 m5">
@@ -162,9 +154,9 @@ var Resources = React.createClass({
             </div>
           </div>
         </div>
-        {/* end card with resources information*/}
-        {/* begin footer */}
-        <footer className="page-footer indigo">
+ {/* begin footer */}
+ <footer className="page-footer indigo">
+
           <div className="container">
             <div className="row">
               <div className="col l6 s12">
@@ -183,7 +175,7 @@ var Resources = React.createClass({
                       className="grey-text text-lighten-3"
                       href="https://www.helpguide.org/"
                       target="_blank"
-                      ref="noreferrer"
+
                     >
                       Help Guide
                     </a>
@@ -193,7 +185,7 @@ var Resources = React.createClass({
                       className="grey-text text-lighten-3"
                       href="https://www.betterhelp.com/"
                       target="_blank"
-                      ref="noreferrer"
+
                     >
                       Find Counseling
                     </a>
@@ -203,7 +195,7 @@ var Resources = React.createClass({
                       className="grey-text text-lighten-3"
                       href="https://suicidepreventionlifeline.org/"
                       target="_blank"
-                      ref="noreferrer"
+
                     >
                       Suicide Prevention Lifeline
                     </a>
@@ -213,7 +205,7 @@ var Resources = React.createClass({
                       className="grey-text text-lighten-3"
                       href="https://www.cdc.gov/injury/features/stop-bullying/index.html"
                       target="_blank"
-                      ref="noreferrer"
+
                     >
                       #StopBullying
                     </a>
@@ -223,7 +215,6 @@ var Resources = React.createClass({
                       className="grey-text text-lighten-3"
                       href="https://www.stopvaw.org/"
                       target="_blank"
-                      ref="noreferrer"
                     >
                       Stop Violence Against Women
                     </a>
@@ -233,7 +224,7 @@ var Resources = React.createClass({
                       className="grey-text text-lighten-3"
                       href="https://www.thehotline.org/"
                       target="_blank"
-                      ref="noreferrer"
+
                     >
                       Domestic Abuse Support{" "}
                     </a>
@@ -252,11 +243,10 @@ var Resources = React.createClass({
         {/*end footer */}
         <link
           rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-        />
+
+          href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
       </div>
-    );
-  },
-});
- 
+      );
+    };
+
 export default Resources;
